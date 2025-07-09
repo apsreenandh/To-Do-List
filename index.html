@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="form">
+        <form>
+
+            <div class="my_todo_list">
+                <h2>My To-Do List</h2>
+            </div>
+
+            <div class="user_input">
+                <div class="new1">
+                    <input type="text" id="New_ToDo" placeholder="Add a new task....">
+                </div>
+
+                <div class="new2">
+                    <button type="submit" onclick="add(event)">Add</button>
+                </div>
+            </div>
+
+        </form>
+        <div id="taskList" class="taskList"></div>
+    </div>
+
+    <div id="pending" class="form" style="margin-top: 20px;">
+        <h5 class="TaskHead"><u>Pending Tasks</u></h5>
+        <ol id="pendingTask" class="taskList"></ol>
+    </div>
+
+    <div id="completed" class="form" style="margin-top: 10px;">
+        <h5 class="TaskHead"><u>Completed Tasks</u></h5>
+        <ol id="completedTask" class="taskList"></ol>
+    </div>
+</body>
+</html>
